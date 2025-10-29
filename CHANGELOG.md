@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/webex/web-capabilities/compare/v1.6.1...v1.7.0) (2025-10-29)
+
+
+### Features
+
+* supportsEncodedStreamTransforms() added ([#13](https://github.com/webex/web-capabilities/issues/13)) ([fda4ada](https://github.com/webex/web-capabilities/commit/fda4ada1e3dd78950f841e5d058b29b026f52a7e))
+
 ## [1.6.1](https://github.com/webex/web-capabilities/compare/v1.6.0...v1.6.1) (2025-07-09)
 
 
