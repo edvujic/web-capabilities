@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/webex/web-capabilities/compare/v1.7.0...v1.7.1) (2025-11-03)
+
+
+### Bug Fixes
+
+* improved checks in supportsEncodedStreamTransforms() ([#15](https://github.com/webex/web-capabilities/issues/15)) ([dcd340b](https://github.com/webex/web-capabilities/commit/dcd340b00fb3a20839ba492979aad3717e7f7220))
+
 # [1.7.0](https://github.com/webex/web-capabilities/compare/v1.6.1...v1.7.0) (2025-10-29)
 
 
