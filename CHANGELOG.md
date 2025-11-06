@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/webex/web-capabilities/compare/v1.7.1...v1.8.0) (2025-11-06)
+
+
+### Features
+
+* add `isCapableOfReceivingVideoCodec` ([#14](https://github.com/webex/web-capabilities/issues/14)) ([3af6768](https://github.com/webex/web-capabilities/commit/3af6768236455b7b578aeec8073973a1c840885f))
+
 ## [1.7.1](https://github.com/webex/web-capabilities/compare/v1.7.0...v1.7.1) (2025-11-03)
 
 
