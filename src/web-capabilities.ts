@@ -81,6 +81,21 @@ export class WebCapabilities {
   }
 
   /**
+   * Checks whether the browser is capable of receiving a specific video codec.
+   *
+   * @param mimeType - The MIME type of the codec to check.
+   * @returns A {@link CapabilityState}.
+   */
+  static isCapableOfReceivingVideoCodec(
+    mimeType: RTCRtpCodecCapability['mimeType']
+  ): CapabilityState {
+    const codecs = RTCRtpReceiver.getCapabilities('video')?.codecs || [];
+    return codecs.some((codec) => codec.mimeType === mimeType)
+      ? CapabilityState.CAPABLE
+      : CapabilityState.NOT_CAPABLE;
+  }
+
+  /**
    * Checks whether the browser supports encoded stream transforms.
    *
    * @returns A {@link CapabilityState}.
