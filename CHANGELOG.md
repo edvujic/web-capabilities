@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/webex/web-capabilities/compare/v1.8.0...v1.9.0) (2026-01-14)
+
+
+### Features
+
+* added supportsRTCPeerConnection() ([#17](https://github.com/webex/web-capabilities/issues/17)) ([3e32efa](https://github.com/webex/web-capabilities/commit/3e32efa28b577ec0b3f97e4af5095db0a74d9578))
+
 # [1.8.0](https://github.com/webex/web-capabilities/compare/v1.7.1...v1.8.0) (2025-11-06)
 
 
