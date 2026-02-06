@@ -113,6 +113,18 @@ export class WebCapabilities {
   }
 
   /**
+   * Checks whether the browser supports RTCPeerConnection. This is needed,
+   * because some users install browser extensions that remove RTCPeerConnection.
+   *
+   * @returns A {@link CapabilityState}.
+   */
+  static supportsRTCPeerConnection(): CapabilityState {
+    return typeof RTCPeerConnection === 'function'
+      ? CapabilityState.CAPABLE
+      : CapabilityState.NOT_CAPABLE;
+  }
+
+  /**
    * Checks whether the browser supports encoding.codec.
    * We check browser support since encoding.codec doesn't exist in the encoding object unless it is set.
    * Supported browsers: Chrome >= 140, Edge >= 140, Firefox >= 145.
@@ -120,11 +132,9 @@ export class WebCapabilities {
    * @returns A {@link CapabilityState}.
    */
   static supportsEncodingCodec(): CapabilityState {
-    return (
-      ((BrowserInfo.isChrome() || BrowserInfo.isEdge()) &&
-        BrowserInfo.isVersionGreaterThanOrEqualTo('140')) ||
+    return ((BrowserInfo.isChrome() || BrowserInfo.isEdge()) &&
+      BrowserInfo.isVersionGreaterThanOrEqualTo('140')) ||
       (BrowserInfo.isFirefox() && BrowserInfo.isVersionGreaterThanOrEqualTo('145'))
-    )
       ? CapabilityState.CAPABLE
       : CapabilityState.NOT_CAPABLE;
   }
