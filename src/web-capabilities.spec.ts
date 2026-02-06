@@ -291,10 +291,7 @@ describe('WebCapabilities', () => {
       isEdgeSpy = jest.spyOn(BrowserInfo, 'isEdge');
       isFirefoxSpy = jest.spyOn(BrowserInfo, 'isFirefox');
       isSafariSpy = jest.spyOn(BrowserInfo, 'isSafari');
-      isVersionGreaterThanOrEqualToSpy = jest.spyOn(
-        BrowserInfo,
-        'isVersionGreaterThanOrEqualTo'
-      );
+      isVersionGreaterThanOrEqualToSpy = jest.spyOn(BrowserInfo, 'isVersionGreaterThanOrEqualTo');
     });
 
     afterEach(() => {
